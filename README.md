@@ -47,3 +47,11 @@ This fork adds a few quality-of-life changes and two new optional components to 
 **Two dialogue lines changed so they could be voiced**
 
 – Gorion's "No." and Ulraunt's "Bah!" in the Ulraunt scene are word-for-word the same as lines already in the base game. WeiDU reuses existing strings when the text matches exactly, so these lines would have shared the base game's string and couldn't get their own voice. Each now ends in a trailing space, which makes it a separate line. The space doesn't show in the game.
+
+**Fix: departure stalling when Imoen is in your party**
+
+– On my EET install, choosing to leave Candlekeep with Imoen in the party got stuck after her goodbye: Gorion never walked to the gate and the move outside never happened. Without Imoen it worked normally.
+
+– The cause appears to be that Imoen's goodbye started the departure cutscene herself, while that same cutscene's first step makes her leave the party and the area. Gorion now starts it instead, which is what already happens when Imoen isn't with you.
+
+– I've only confirmed the problem on EET (with other mods installed), so it may not happen on plain BG:EE. The fix is safe either way.
