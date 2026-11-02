@@ -17,3 +17,33 @@ New content:
 – An optional component for an extended starting sequence based on class, paired with extended dialogue with Gorion and an earlier appearance of Ulraunt
 
 – New optional portraits for the aforementioned five NPCs in place of their vanilla portraits
+
+---
+
+## Changes in this fork (smeagolheart)
+
+This fork adds a few quality-of-life changes and two new optional components to the original mod by ArtemiusI.
+
+**Skippable cutscenes (component 0)**
+
+– The Ulraunt scene at the gates can now be skipped with Esc, like the base game's cutscenes. Skipping jumps straight to Gorion's follow-up conversation.
+
+– The extended armored figure (Sarevok) ambush can now be skipped with Esc at any of its scenes, using the base game's own ambush skip, which takes you to the start of Chapter 1.
+
+**New component 5: Extended dialogue with Gorion and Ulraunt**
+
+– Gorion's farewell talk and the earlier appearance of Ulraunt, split out of the Expanded Starting Sequence so they can be installed without it. Requires component 0.
+
+– Component 1 still includes this scene on its own, so components 1 and 5 can't both be installed, and the scene is never added twice.
+
+**New component 6: AI voiced lines**
+
+– Adds voice acting for the lines this mod adds (353 lines). **The voices are AI-generated** and are not by the original author or any voice actor.
+
+– Each sound is attached by matching its line's exact text in dialog.tlk, so it works with whichever components you have installed. Lines from components you haven't installed are skipped, and lines that already have a sound are left alone.
+
+– Install it after any other Candlekeep Revisited components. If you add a component later, reinstall component 6 so the new lines get voiced.
+
+**Two dialogue lines changed so they could be voiced**
+
+– Gorion's "No." and Ulraunt's "Bah!" in the Ulraunt scene are word-for-word the same as lines already in the base game. WeiDU reuses existing strings when the text matches exactly, so these lines would have shared the base game's string and couldn't get their own voice. Each now ends in a trailing space, which makes it a separate line. The space doesn't show in the game.
