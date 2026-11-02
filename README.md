@@ -38,7 +38,7 @@ This fork adds a few quality-of-life changes and two new optional components to 
 
 **New component 6: AI voiced lines**
 
-– Adds voice acting for the lines this mod adds (353 lines). **The voices are AI-generated** and are not by the original author or any voice actor.
+– Adds voice acting for the lines this mod adds (352 lines). **The voices are AI-generated** and are not by the original author or any voice actor.
 
 – Each sound is attached by matching its line's exact text in dialog.tlk, so it works with whichever components you have installed. Lines from components you haven't installed are skipped, and lines that already have a sound are left alone.
 
