@@ -22,36 +22,38 @@ New content:
 
 ## Changes in this fork (smeagolheart)
 
-This fork adds a few quality-of-life changes and two new optional components to the original mod by ArtemiusI.
+Quality-of-life changes, bug fixes and two optional components added to the original mod by ArtemiusI. The fixes were found and tested on EET.
 
-**Skippable cutscenes (component 0)**
+**New components**
 
-– The Ulraunt scene at the gates can now be skipped with Esc, like the base game's cutscenes. Skipping jumps straight to Gorion's follow-up conversation.
+– **5: Extended dialogue with Gorion and Ulraunt.** Gorion's farewell and Ulraunt's early appearance without the class-based intro. Requires component 0; not needed with component 1, which already includes it.
 
-– The extended armored figure (Sarevok) ambush can now be skipped with Esc at any of its scenes, using the base game's own ambush skip, which takes you to the start of Chapter 1.
+– **6: AI voiced lines.** Voices the lines this mod adds (357 lines). **The voices are AI-generated**, not by the original author or a voice actor. Install it after the other components; lines that already have a sound are left alone.
 
-**New component 5: Extended dialogue with Gorion and Ulraunt**
+**Cutscenes**
 
-– Gorion's farewell talk and the earlier appearance of Ulraunt, split out of the Expanded Starting Sequence so they can be installed without it. Requires component 0.
+– The Ulraunt scene and the extended Sarevok ambush can be skipped with Esc.
 
-– Component 1 still includes this scene on its own, so components 1 and 5 can't both be installed, and the scene is never added twice.
+– In the ambush, the archers now shoot at Gorion instead of the player, who has already fled.
 
-**New component 6: AI voiced lines**
+**Imoen in the party (EET)**
 
-– Adds voice acting for the lines this mod adds (357 lines). **The voices are AI-generated** and are not by the original author or any voice actor.
+– Her party dialogue is now set when she joins in Candlekeep, so her lines play (her goodbye at the gate, Mordaine's quest, and other interjections).
 
-– Each sound is attached by matching its line's exact text in dialog.tlk, so it works with whichever components you have installed. Lines from components you haven't installed are skipped, and lines that already have a sound are left alone.
+– After the ambush she rejoins properly: one Imoen walks over, says "Sorry I followed ya..." and joins. Previously the original Imoen could be removed.
 
-– Install it after any other Candlekeep Revisited components. If you add a component later, reinstall component 6 so the new lines get voiced.
+– Leaving with her no longer stalls after her goodbye.
 
-**Two dialogue lines changed so they could be voiced**
+– If you decline her offer to tag along, she asks again the next time you talk to her.
 
-– Gorion's "No." and Ulraunt's "Bah!" in the Ulraunt scene are word-for-word the same as lines already in the base game. WeiDU reuses existing strings when the text matches exactly, so these lines would have shared the base game's string and couldn't get their own voice. Each now ends in a trailing space, which makes it a separate line. The space doesn't show in the game.
+**Quests**
 
-**Fix: departure stalling when Imoen is in your party**
+– Mordaine's letter, Arkanis's books and Canderous's supplies can no longer get stuck if a conversation ends early. Arkanis's books can also be started from his second greeting.
 
-– On my EET install, choosing to leave Candlekeep with Imoen in the party got stuck after her goodbye: Gorion never walked to the gate and the move outside never happened. Without Imoen it worked normally.
+– With Imoen around, Obe's practice fight and the Chapter 6 Arkanis scene work even if her line is cut short.
 
-– The cause appears to be that Imoen's goodbye started the departure cutscene herself, while that same cutscene's first step makes her leave the party and the area. Gorion now starts it instead, which is what already happens when Imoen isn't with you.
+**Voicing**
 
-– I've only confirmed the problem on EET (with other mods installed), so it may not happen on plain BG:EE. The fix is safe either way.
+– Placeholder sounds were removed from three lines so they could be voiced: one of Gorion's and two of Sarevok's.
+
+– Gorion's "No." and Ulraunt's "Bah!" end in a trailing space so they don't share the base game's identical, already-voiced strings. The space doesn't show in the game.
